@@ -1,17 +1,66 @@
 ﻿<!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <meta charset="utf-8" />
-    <title>iMast_for_UWP</title>
-    <link href="css/default.css" rel="stylesheet" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>WinJS Hello world</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="WinJS/js/base.js"></script>
+    <script src="WinJS/js/ui.js"></script>
+    <script src="WinJS/js/WinJS.js"></script>
+
     <script src="Scripts/jquery-3.1.1.min.js"></script>
-    <script src="Scripts/angular.min.js"></script>
-    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            "use strict";
+            WinJS.Application.onready = function () {
+                WinJS.UI.processAll();
+            };
+            WinJS.Application.start();
+        })();
+
+
+    </script>
+    <style type="text/css">
+    </style>
 </head>
 <body>
-    <div>コンテンツをここに挿入。</div>
-    <script src="js/main.js"></script>
+    <div id="app">
+
+        <div class="splitView" data-win-control="WinJS.UI.SplitView">
+            <!-- Pane area -->
+            <div>
+                <div class="header">
+                    <button class="win-splitviewpanetoggle"
+                            data-win-control="WinJS.UI.SplitViewPaneToggle"
+                            data-win-options="{ splitView: select('.splitView') }"></button>
+                    <div class="title"> <h3 class="win-h3">iMast for UWP</h3></div>
+                </div>
+                <div class="nav-commands">
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Settings', icon: 'settings'}"></div>
+                </div>
+            </div>
+
+            <!-- Content area -->
+            <div class="contenttext">
+                <h2 class="win-h2">SplitView Content Area</h2>
+            </div>
+            <div class="py-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">aaa</div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">aaa</div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">aaa</div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">aaa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js" type="text/javascript"></script>
 </body>
 </html>
