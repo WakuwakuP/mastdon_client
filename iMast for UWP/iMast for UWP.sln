@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "iMast for UWP", "iMast for UWP\iMast for UWP.jsproj", "{72215993-ED8F-4648-9491-2CF4B766AD27}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|ARM.ActiveCfg = Debug|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|ARM.Build.0 = Debug|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|ARM.Deploy.0 = Debug|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x64.ActiveCfg = Debug|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x64.Build.0 = Debug|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x64.Deploy.0 = Debug|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x86.ActiveCfg = Debug|x86
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x86.Build.0 = Debug|x86
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Debug|x86.Deploy.0 = Debug|x86
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|ARM.ActiveCfg = Release|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|ARM.Build.0 = Release|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|ARM.Deploy.0 = Release|ARM
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x64.ActiveCfg = Release|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x64.Build.0 = Release|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x64.Deploy.0 = Release|x64
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x86.ActiveCfg = Release|x86
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x86.Build.0 = Release|x86
+		{72215993-ED8F-4648-9491-2CF4B766AD27}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A842150-C81D-4F26-9D23-25448D4EB6F1}
+	EndGlobalSection
+EndGlobal
