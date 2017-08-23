@@ -35,24 +35,59 @@
                     <div class="title"> <h3 class="win-h3">iMast for UWP</h3></div>
                 </div>
                 <div class="nav-commands">
-                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Home', icon: 'home'}"></div>
-                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Favorite', icon: 'favorite'}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Home timeline', icon: 'home'}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Local timeline', icon: 'people'}"></div>
+                    <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Federated timeline', icon: 'world'}"></div>
+                  
                     <div data-win-control="WinJS.UI.SplitViewCommand" data-win-options="{ label: 'Settings', icon: 'settings'}" style="position:absolute;bottom:0;width:100%"></div>
                 </div>
             </div>
 
-            <!-- Content area -->
-            <div class="toolbar" data-win-control="WinJS.UI.ToolBar">
+            <!--<div class="toolbar" data-win-control="WinJS.UI.ToolBar">
                 <button data-win-control="WinJS.UI.Command" data-win-options="{
                             id:'cmdEdit',
                             type:'button',
                             icon:'edit',
-                            onclick: Sample.outputCommand}"></button>
-            </div>
+                            onclick: ToolBar.outputCommand}"></button>
+            </div>-->
+
+            <!-- Content area -->
             <div class="contenttext">
-                <h2 class="win-h2">SplitView Content Area</h2>
-                <div class="win-h3 status"></div>
-                <div class="tootArea" id="POST">
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- non xs -->
+                        <div class="TL hidden-xs col-sm-4 col-md-3 col-lg-3">
+                            <div><h3 class="win-h3">Home timeline</h3></div>
+                            <div>
+                                 ここを動的生成 
+                            </div>
+                        </div>
+                        <div class="TL hidden-xs col-sm-4 col-md-3 col-lg-3">
+                            <div><h3 class="win-h3">Local timeline</h3></div>
+                            <div>
+                                 ここを動的生成 
+                            </div>
+                        </div>
+                        <div class="TL hidden-xs hidden-sm col-md-3 col-lg-3">
+                            <div><h3 class="win-h3">Notifications</h3></div>
+                            <div>
+                                 ここを動的生成 
+                            </div>
+                        </div>
+                        <div class="TL hidden-xs col-sm-4 col-md-3 col-lg-3">
+                            <div><input type="text" /></div>
+                            <div>
+                                ここを動的生成
+                            </div>
+                        </div>
+                        
+                        <!-- xs -->
+                        <div class="TL visible-xs">
+                            小さいよ
+                        </div>
+                    </div>
+                </div>
+                <div class="tootArea hidden-xs" id="POST">
                     <textarea></textarea>
                     <button type="submit">POST</button>
                 </div>

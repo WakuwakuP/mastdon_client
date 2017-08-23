@@ -84,3 +84,12 @@
     padding: 0px;
     background-color: dimgrey;
 }
+
+#app input {
+    background-color: dimgrey;
+}
+
+#app .TL > div {
+    background-color: grey;
+    margin: 5px;
+}
