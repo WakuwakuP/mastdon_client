@@ -1,9 +1,4 @@
-﻿body {
-  /* このコメントを解除し、スクロールとズームを有効にする
-  タッチ操作: 操作;
-  */
-}
-.content,
+﻿.content,
 #app {
     height: 100%;
 }
@@ -46,10 +41,46 @@
 }
 
 #app .contenttext {
-    margin-left: 20px;
-    margin-top: 6px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 #app .my-account {
     background-image: url('../images/Wide310x150Logo.scale-200.png');
+}
+
+#app .toolber {
+    width: 100%;
+}
+
+#app .status {
+    margin-top: 12px;
+}
+
+#app .tootArea {
+    width: calc(100% - 10px);
+    height: 100px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#app .tootArea > button {
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    background-color: dimgrey;
+    
+}
+
+#app .tootArea > textarea {
+    width: calc(100% - 100px);
+    height: 100px;
+    margin: 0px;
+    padding: 0px;
+    background-color: dimgrey;
 }
