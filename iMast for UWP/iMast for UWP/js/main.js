@@ -1,4 +1,10 @@
 ﻿// コードをここに挿入。
+
+// アプリデータの管理用変数
+var applicationData = Windows.Storage.ApplicationData.current;
+var localSettings = applicationData.localSettings;
+var localFolder = applicationData.localFolder;
+
 WinJS.UI.processAll().done(function () {
     var splitView = document.querySelector(".splitView").winControl;
     new WinJS.UI._WinKeyboard(splitView.paneElement); // Temporary workaround: Draw keyboard focus visuals on NavBarCommands
@@ -18,3 +24,12 @@ WinJS.UI.processAll().done(function () {
 //    })
 //});
 
+var startUp = localSettings.values["StartUp"];
+
+if (!startUp || startUp == false) {
+    localSettings.values["StartUp"] = false;
+    var oauth = document.querySelector("#OAuth").winControl;
+    oauth.show();
+}
+//else {
+//}
