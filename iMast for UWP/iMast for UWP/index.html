@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>WinJS Hello world</title>
+    <title>iMastodon for UWP</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="WinJS/css/ui-dark.css" rel="stylesheet" />
     <link href="css/default.css" rel="stylesheet" />
@@ -11,24 +11,21 @@
 
     <script src="Scripts/jquery-3.1.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            "use strict";
-            WinJS.Application.onready = function () {
-                WinJS.UI.processAll();
-            };
-            WinJS.Application.start();
-        })();
-    </script>
 </head>
 <body>
     <div id="app">
 
         <!-- ContentDialog -->
-        <div id="OAuth" data-win-control="WinJS.UI.ContentDialog" data-win-options="{title: 'OAuth認証'}">
+        <div id="OAuth" class="OAuth" data-win-control="WinJS.UI.ContentDialog" data-win-options="{title: 'OAuth認証'}">
             <h3 class="win-h3">接続インスタンスを設定してください.</h3>
-            <input type="url" />
-            <button>認証</button>
+            <div>
+                <form class="OAuthContents">
+                    <input id="InstanceDomain" class="win-textbox text" type="text" value="imastodon.net" />
+                    <input id="clientName" class="win-textbox text" type="text" value="iMast for UWP" />
+                    <button class="win-button button" type="button" onclick="retrun OAuth();">認証</button>
+                </form>
+                <div id="aaaa"></div>
+            </div>
         </div>
 
         <div class="splitView" data-win-control="WinJS.UI.SplitView">
@@ -133,6 +130,6 @@
             </div>
         </div>
     </div>
-    <script src="js/main.js" type="text/javascript"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

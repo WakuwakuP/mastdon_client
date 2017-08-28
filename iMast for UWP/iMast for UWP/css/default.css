@@ -91,5 +91,13 @@
 }
 
 .nav-tabs > li > a {
-    border-radius: 0px;
+    border-radius: 1px;
+}
+
+#app .OAuthContents > .text {
+    width: 100%;
+}
+
+#app .OAuthContents > .button {
+    float: right;
 }
